@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <!--Этот элемент определяет параметры отображения на мобильных устройствах width=device-width указывает, что ширина страницы должна соответствовать ширине устройства, а initial-scale=1.0 задает начальный масштаб отображения-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!--Для шрифтра из фигмы-->
+    <title>FKokos.ru</title>
+    <link rel="icon" href="../static/images/logo.ico" />
+    <link rel="stylesheet" href="../static/css/style.css"> <!--ИЗМЕНЕНО-->
+    <script type="text/javascript" src="../static/js/script.js"></script> <!--ИЗМЕНЕНО-->
+</head>
+
+<body style="margin:0; background-color: rgba(19, 82, 60, 1); overflow-x: hidden;">
+    <div class="str">
+        <div class="header-line"> <!--Шапка с менюшкой -->
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../static/images/logo.png" alt="Лого_кокос_групп">
+                </a>
+            </div>
+
+            <div class="menu">
+                <a class="menu-item" href="club.html">О клубе</a>
+                <a class="menu-item" href="team.html">Команда</a>
+                <a class="menu-item" href="news.html">Новости</a>
+                <a class="menu-item" href="matches.html">Матчи</a>
+                <a class="menu-item" href="store.html">Магазин</a>
+            </div>
+
+            <div class="phone">
+                <a href="#">
+                    <img src="../static/images/phone-icon.png" alt="Телефон">
+                </a>
+            </div>
+
+            <div class="lk">
+                <a href="auth.html">
+                    <img src="../static/images/lk.png" alt="Личный кабинет">
+                </a>
+            </div>
+        </div>
+        <div class="results">
+            <div class="previous, knopka">
+                <a href="#">
+                    <img src="../static/images/previous.png" alt="Стрелка">
+                </a>
+            </div>
+
+            <div class="match">
+                <p>28 сентября 2024 15:50</p>
+                <div style="display: flex; justify-content: space-between; margin-left: 2vw; margin-right: 2vw;">
+                    <p style="flex-direction: column; margin-top: -0.3vw; align-items: center;">
+                        <img style="width: 3.47vw;" src="../static/images/logo-pishevik.png" alt="лого">
+                        Пищевик
+                    </p>
+                    <p>5:2</p>
+                    <p style="flex-direction: column; margin-top: -0.3vw; align-items: center;">
+                        <img style="width: 3.47vw;" src="../static/images/logo.png" alt="лого">Кокос Групп
+                    </p>
+                </div>
+                <div style="display: flex; justify-content:center;">
+                    <button>Смотреть матч</button>
+                </div>
+            </div>
+            <div class="tablo" style="width: 20.49vw;">
+                <p style="padding-left: 1.67vw; justify-content: left;">20.09.2024 13:30</p>
+                <div style="display: flex; align-items: center;">
+                    <img style="width: 2.08vw; margin-right: 1vw; margin-left: 1.67vw; margin-top: 1.39vw;"
+                        src="../static/images/logo.png" alt="лого">
+                    <p> Кокос Групп </p>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img style="width: 2.08vw; margin-right: 1vw; margin-left: 1.67vw; margin-top: 1.39vw;"
+                        src="../static/images/logo-antisport.png" alt="лого">
+                    <p> Антиспорт</p>
+                </div>
+            </div>
+            <div class="next, knopka">
+                <a href="#">
+                    <img src="../static/images/next.png" alt="Стрелка">
+                </a>
+            </div>
+
+        </div>
+
+        <div id="game-container">
+            <span class="hide-button" id="hide" onclick="hide();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="191" viewBox="0 0 52 191" fill="none"
+                    style="position: absolute; left: -3.5vw; top: 15vw;">
+                    <g filter="url(#filter0_b_38_30)">
+                        <path d="M0 20C0 8.95431 8.95431 0 20 0H52V191H20C8.9543 191 0 182.046 0 171V20Z" fill="#14543C"
+                            fill-opacity="0.7" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_b_38_30" x="-12" y="-12" width="76" height="215"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="6" />
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_38_30" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_38_30"
+                                result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+                <img src="../static/images/next.png" style="position: absolute; left: -2.5vw; top: 19vw;">
+            </span>
+            <div id="header">
+                <div style=" display:flex; justify-content: space-between; ">
+                    <button>Купить билет</button>
+                    <span class="counter" id="score" style="float: right;">0/10</span>
+                </div>
+                <span style=" display: flex; justify-content: center; margin-top: 0.69vw">10 голов = 10% скидка на
+                    билет</span>
+
+            </div>
+            <div id="direction-indicators">
+                <div id="left-indicator"></div>
+                <div id="center-indicator"></div>
+                <div id="right-indicator"></div>
+            </div>
+
+            <div style=" display:flex; flex-direction: column; align-items: center; ">
+                <img id="goal" src="../static/images/goal.png" alt="Ворота" style="width: 12vw;">
+                <img id="goalkeeper" src="../static/images/goalkeeper.png" alt="Вратарь"
+                    style="width: 7vw; position: absolute; top: 10vw;">
+                <img id="ball" src="../static/images/ball.png" alt="Мяч"
+                    style=" top: 25vw; position: absolute; width: 5vw;">
+            </div>
+
+            <div>
+                <span class="counter" id="result" style="margin-left: 4vw; position: absolute; top: 18vw;">Выбери
+                    направление с помощью стрелок!</span>
+            </div>
+
+            <div style="position: absolute; top: 21vw; left: 6.8vw; ">
+
+                <img id="left-button" src="../static/images/strelka-left.png" alt="Стрелка лево">
+                <img id="center-button" src="../static/images/strelka-center.png" alt="Стрелка в центр">
+                <img id="right-button" src="../static/images/strelka-right.png" alt="Стрелка право">
+
+            </div>
+
+        </div>
+
+        <div style="margin-top: 35vw; margin-bottom: 1vw; position: static; margin-left: 2vw;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="655" height="861" viewBox="0 0 655 861" fill="none">
+                <rect width="362" height="861" rx="40" fill="#007146" />
+                <rect width="655" height="174" rx="40" fill="#007146" />
+                <path
+                    d="M362 174C362 174 422.5 174 413.5 174C404.5 174 387.5 175.861 376 188C364.5 200.139 362 217 362 228.5C362 240 362 174 362 174Z"
+                    fill="#007146" />
+            </svg>
+            <h1 style="position: absolute; top:104vh; margin-left: 4vw; font-size: 2vw;">Лучший футболист сентября 2024
+            </h1>
+            <button
+                style="position: absolute; top: 115vh; margin-left: -16vw; font-size: 2vw; z-index: 2; color: white; background-color: rgba(185, 52, 35, 1); border-radius: 0.78vw; padding: 0.5vw;">Голосовать</button>
+            <p style="position: absolute; top: 117vh; margin-left: 3vw; z-index: 3;">Азембловский <br>Никита Дмитриевич
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                style="position: absolute; top: 117.5vh; margin-left: -27vw; z-index:3;">
+                <circle cx="20" cy="20" r="20" fill="black" fill-opacity="0.3" />
+            </svg>
+
+            <img src="../static/images/photo1.png" alt="Фото"
+                style="position: absolute; margin-top: 12.5vw; margin-left: -19.5vw;">
+            <img src="../static/images/tablo.png" alt="Табло" style="position: absolute; margin-left: 0.5vw;">
+            <img src="../static/images/photo2.png" alt="Фото" style="position: static; margin-left: 0.5vw;">
+
+
+        </div>
+
+        <div class="basement" style="font-size: 1vw;">
+            <div style="margin-left: 1vw; margin-right: 16vw;">
+                <p style="margin: 0vw;">Контакты</p>
+                <p style="margin: 0vw;">Футбольный клуб “Кокос групп”</p>
+            </div>
+            <p style="margin-right: 3vw;">Наши соцсети</p>
+            <a href="#">
+                <img src="../static/images/rutube.png" alt="Ссылка на рутуб" style="margin-right: 1vw;">
+            </a>
+            <a href="https://t.me/fckokocgroup">
+                <img src="../static/images/telegram.png" alt="Ссылка на телеграмм" style="margin-right: 35vw;">
+            </a>
+            <img src="../static/images/logo2.png" alt="Лого" style="width: 5vw;">
+        </div>
+
+    </div>
+
+</body>

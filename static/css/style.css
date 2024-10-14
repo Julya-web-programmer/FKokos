@@ -1,0 +1,432 @@
+
+
+.str{
+    background-image: url("../images/team.jpg"); /* Фоновый цвет и фоновый рисунок*/
+    height: 100vh;
+    background-size: 100%;
+
+    font-family: Inter; /*Helvetica; /*Доступная замена*/
+    color: white;
+}
+
+
+.str2{
+    position: fixed;
+    /*background-image: url("../images/team.jpg");  Фоновый цвет и фоновый рисунок*/
+    background-image: url("../images/background.png");
+    height: 100vh;
+    background-size: 100vw 13.9vw;
+    background-repeat: no-repeat;
+
+    font-family: Inter; /*Helvetica; /*Доступная замена*/
+    color: white;
+    background-color: rgba(0, 73, 44, 1);
+}
+
+.header-line{
+    /*width: 100vw;*/
+    height: 4vw;
+    
+    /*position: absolute;*/
+    display: flex;
+    align-items: center;
+    background-color:rgba(20, 84, 60, 1);
+    z-index: 9999999;
+
+    padding: 0 1.56vw;
+
+    margin: 0vw; /*Отступы сверхуснизу справаслева */
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter; /*Helvetica; /*Доступная замена*/
+
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 3vw;
+}
+
+.logo img{
+    width: 4vw;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-left: 7vw;
+}
+
+.menu-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vw;
+
+    width: 13vw;
+    color: white;
+    
+    text-decoration: none;
+    
+    /*margin-right: 1.04vw;
+    
+    
+    padding: 0.74vh 0.74vh;
+    /*padding-right: 4vw;*/
+
+    font-weight: 600;
+    font-size: 1.2vw;
+    font-family: Inter; /*Доступная замена*/ 
+}
+
+.lk
+{
+    
+    margin-top: 0.42vw;
+    margin-left: 4.17vw;
+    margin-right: 3vw;
+}
+
+.lk img{
+    height: 1.98vw;
+}
+
+.phone
+{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.42vw;
+}
+
+.phone img{
+    height: 1.98vw;
+}
+
+.results{
+    height: 10vw;
+    background-color: rgba(20, 84, 60, 0.6);
+
+    display: flex;
+}
+
+.knopka{
+    padding-left: 0.69vw;
+    padding-right: 0.69vw;
+    padding-top: 3vw;
+
+    background-color: rgba(20, 84, 60, 0.7);
+}
+
+.match{
+    height: 10vw;
+    width: 25vw;
+    background-color:rgba(0, 112, 71, 1);
+}
+
+.results p{
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    font-size: 1vw;
+    margin-top: 1.39vw;
+
+}
+
+.results button{
+    height: 2.08vw;
+
+    color: white;
+    background-color:rgba(20, 84, 60, 1);
+    text-decoration: none;
+    
+    margin-right: 1.04vw;
+    border: 0vw solid rgba(20, 84, 60, 1);
+    border-radius: 2vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 1vw;
+    font-family: Inter; /*Доступная замена*/
+}
+.block-news{
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 1vw;
+
+    margin-bottom: 2.8vw;
+    margin-top: 2.8vw;
+}
+
+.new{
+    padding: 1vw;
+    width: 34vw;
+    height: 10vw;
+
+    background-image: url("../images/footballback.png");
+    background-size: 100%;
+
+    border-radius: 2.08vw;
+
+    margin: 1vw;
+}
+
+.basement{
+    position: relative;
+
+    height: 4.2vw;
+    background-color: rgba(20, 84, 60, 1);
+    box-shadow: 0 -0.27vw 0.27vw rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    
+    align-items: center;
+
+    padding-left: 4vw;
+}
+
+#game-container {
+    margin-top: 1vw;
+    margin-right: 1vw;
+    width: 25vw;
+    height: 30vw;
+    position: absolute;
+    right: 0vw;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(20, 84, 60, 0.7);
+}
+
+#header {
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+}
+
+#header button {
+    background-color: #B93423;
+    color: #ffffff;
+    width: 15vw;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.1vw;
+}
+
+#header button:hover {
+    background-color: #cc0000;
+}
+
+#score {
+    font-weight: bold;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+
+.store {
+    background-color: rgba(20, 84, 60, 1);
+    
+    padding: 3.9vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.product {
+    text-align: center;
+    color: white;
+    width: 15vw;
+    height: 22vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2.78vw;
+    padding: 1vw;
+    flex-wrap: wrap;
+}
+
+.product img {
+    width: 15vw;
+}
+
+.product p{
+    font-size: 1vw;
+    margin: 0vw;
+}
+
+.red-button {
+
+    font-size: 1vw;
+    margin-top: 3vw;
+    background-color: #B93423;
+    color: white;
+    padding: 0.69vw 2.08vw;
+
+    border: none;
+    border-radius: 0.35vw;
+}
+
+
+/* Стилизация ползунка прокрутки */
+.str::-webkit-scrollbar {
+    width: 0.36vw; /* Ширина ползунка */
+}
+
+.str::-webkit-scrollbar-track {
+    background: #F0F2FF; /* Цвет фона трека */
+    border-radius: 0.32vh;
+}
+
+.str::-webkit-scrollbar-thumb {
+    background: #1F2B6A; /* Цвет ползунка */
+    border-radius: 0.32vh;
+}
+
+.str::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет ползунка при наведении */
+}
+
+.about-club {
+    width: 50vw;
+}
+
+
+/* Описание клуба */
+.club-info {
+    position: absolute;
+    width: 862px;
+    height: 235px;
+    left: 37px;
+    top: 338px;
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+/* Основной блок */
+.club-representatives {
+    margin-bottom: 2.8vw;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+    position: relative;
+    top:-16vw;
+    margin-left: 2vw;
+    width: 50vw;
+    background: rgba(43, 43, 43, 0.5);
+    
+}
+
+
+/* Имена представителей клуба */
+.name {
+   display: flex;
+   font-size: 0.6vw;
+   margin-left: 4vw;
+}
+
+.name h2{
+    margin-right: 5vw;
+}
+
+:root {
+    --background-color: #00492C;
+    --highlight-color: #12543C;
+    font-family: 'Inter', sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Исправлено */
+    min-height: 100vh;
+    color: white;
+  }
+
+
+
+  a {
+    text-decoration: none;
+    display: flex;
+    color: white;
+  }
+
+  a * {
+    align-items: center;
+  }
+
+  .selected-header {
+    background-color: var(--background-color);
+  }
+
+  main {
+    background-color: var(--background-color);
+    flex-grow: 1;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .matches {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: scroll;
+    width: 20vw;
+    scrollbar-width: none;
+  }
+
+  .matches > li {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    height: 110%;
+    background-color: rgba(85, 182, 144, 0.7);
+    border-radius: 30px;
+  }
+
+  .matches > li time {
+    margin-bottom: 30px;
+  }
+
+  .matches > li ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .matches > li ul li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 600;
+  }
+
+  .matches > li ul li img {
+    width: 30px;
+    aspect-ratio: 1;
+  }
+
